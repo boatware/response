@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-      keys:
-        - v1-dependencies-{{ checksum "composer.json" }}
-        - v1-dependencies-
+          keys:
+            - v1-dependencies-{{ checksum "composer.json" }}
+            - v1-dependencies-
       - run: ./vendor/bin/pest
