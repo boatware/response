@@ -17,13 +17,4 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-  test:
-    docker:
-      - image: roadiz/php74-runner:latest
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "composer.json" }}
-            - v1-dependencies-
       - run: ./vendor/bin/pest
