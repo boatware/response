@@ -7,7 +7,6 @@ class ErrorResponse extends ApiResponse
     public function __construct(string $message, array $extraData = [], int $status = 400, array $headers = [])
     {
         $data = [
-            'status' => 'error',
             'message' => $message
         ];
 
@@ -15,6 +14,6 @@ class ErrorResponse extends ApiResponse
             $data['extra'] = $extraData;
         }
 
-        parent::__construct($data, $status, $headers);
+        parent::__construct(ApiResponse::RESPONSE_STATUS_ERROR, $data, $status, $headers);
     }
 }
