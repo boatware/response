@@ -32,8 +32,8 @@ it('has an error message', function () {
 });
 
 it('has extra data', function () {
-    $errorResponse = new ErrorResponse(DEFAULT_ERROR_MESSAGE, DEFAULT_ERROR_EXTRA_DATA);
+    $errorResponse = new ErrorResponse(DEFAULT_ERROR_MESSAGE, DEFAULT_EXTRA_DATA);
     $content = $errorResponse->getContentArray();
     $this->assertTrue(isset($content['extra']));
-    $this->assertEquals($content['extra'], DEFAULT_ERROR_EXTRA_DATA);
+    $this->assertEquals($content['extra'], DEFAULT_EXTRA_DATA);
 });
