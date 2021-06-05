@@ -1,5 +1,5 @@
 {
-    "name": "appletie/response",
+    "name": "boatware/response",
     "description": "Sample presets of Responses based on Symfonys Response types",
     "type": "library",
     "require-dev": {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Appletie\\Response\\": "src/"
+            "Boatware\\Response\\": "src/"
         }
     },
     "minimum-stability": "dev",

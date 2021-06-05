@@ -1,6 +1,6 @@
 <?php
 
-namespace Appletie\Response\Json;
+namespace Boatware\Response\Json;
 
 class ErrorResponse extends ApiResponse
 {

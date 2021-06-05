@@ -1,10 +1,10 @@
 <?php
 
-use Appletie\Response\Json\ApiResponse;
-use Appletie\Response\Json\SuccessfulResponse;
+use Boatware\Response\Json\ApiResponse;
+use Boatware\Response\Json\SuccessfulResponse;
 
 test('class SuccessfulResponse exists', function () {
-    $this->assertTrue(class_exists("Appletie\Response\Json\SuccessfulResponse"));
+    $this->assertTrue(class_exists("Boatware\Response\Json\SuccessfulResponse"));
 });
 
 it('can create an SuccessfulResponse', function () {

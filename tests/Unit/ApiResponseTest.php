@@ -1,10 +1,10 @@
 <?php
 
-use Appletie\Response\Json\ApiResponse;
+use Boatware\Response\Json\ApiResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 test('class ApiResponse exists', function () {
-    $this->assertTrue(class_exists("Appletie\Response\Json\ApiResponse"));
+    $this->assertTrue(class_exists("Boatware\Response\Json\ApiResponse"));
 });
 
 it('can create an ApiResponse', function () {

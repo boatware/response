@@ -1,10 +1,10 @@
 <?php
 
-use Appletie\Response\Json\ApiResponse;
-use Appletie\Response\Json\ErrorResponse;
+use Boatware\Response\Json\ApiResponse;
+use Boatware\Response\Json\ErrorResponse;
 
 test('class ErrorResponse exists', function () {
-    $this->assertTrue(class_exists("Appletie\Response\Json\ErrorResponse"));
+    $this->assertTrue(class_exists("Boatware\Response\Json\ErrorResponse"));
 });
 
 it('can create an ErrorResponse', function () {
